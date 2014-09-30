@@ -48,6 +48,15 @@ public class NavigationBar extends BSComponent implements BSNavigationBar.Delega
 		navComponents.tag = ExampleComponents.class;
 		navExamples.childItems.add(navComponents);
 		
+		BSNavigationBar.Item navEditorComponents = new BSNavigationBar.Item("Editor-Components") {
+			@Override
+			public WOActionResults action(WOContext context) {
+				return pageWithName(ExampleEditorComponents.class, context);
+			}
+		};
+		navEditorComponents.tag = ExampleEditorComponents.class;
+		navExamples.childItems.add(navEditorComponents);
+		
 		navigationItems = new NSArray<BSNavigationBar.Item>(new BSNavigationBar.Item[] {
 				navExamples
 		});

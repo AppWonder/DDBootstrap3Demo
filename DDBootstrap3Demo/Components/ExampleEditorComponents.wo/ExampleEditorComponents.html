@@ -1,0 +1,144 @@
+<wo:Wrapper title="Example Editor-Components">
+	
+	<wo:BSEditorPart title="Build your Editors" subtitle="Faster">
+		With this set of Editor-Components you can build nice looking Editors without much Mark-Up. Quick and rapid development.
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorPart">
+		<p class="synopsis">Wrapps your content into logical pieces.</p>
+		<wo:BSEditorPart title="My Editor" subtitle="Let's do something">Content</wo:BSEditorPart>
+		<br />
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorPart title="My Editor" subtitle="Let's do something"&gt;Content&lt;/wo:BSEditorPart&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="collapseTest1"></a>
+	<wo:BSEditorPart title="BSEditorPartCollapsible">
+		<p class="synopsis">Want to hide complicated parts from the user? Or do you want to organize your editor?</p>
+		<wo:BSEditorPartCollapsible title="Complicated stuff" subtitle="Click Me" collapsibleId="collapseTest1">
+			<wo:BSEditorForm fragmentIdentifier="collapseTest1">
+				<p>You can add jump marks after submitting the form so your user doesn't have to scroll all the way down. Shiny!</p>
+				<wo:BSSubmitButton action="$exampleAction">Let's Try</wo:BSSubmitButton>
+			</wo:BSEditorForm>
+		</wo:BSEditorPartCollapsible>
+		<br />
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;a name="collapseTest1"&gt;&lt;/a&gt;
+&lt;wo:BSEditorPartCollapsible title="Complicated stuff" subtitle="Click Me" collapsibleId="collapseTest1"&gt;
+	&lt;wo:BSEditorForm fragmentIdentifier="collapseTest1"&gt;
+		&lt;p&gt;You can add jump marks after submitting the form so your user doesn't have to scroll all the way down. Shiny!&lt;/p&gt;
+		&lt;wo:BSSubmitButton action="$exampleAction"&gt;Let's Try&lt;/wo:BSSubmitButton&gt;
+	&lt;/wo:BSEditorForm&gt;
+&lt;/wo:BSEditorPartCollapsible&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorForm">
+		<p class="synopsis">In order for proper responsive layouting we need BSEditorForm.</p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorForm&gt;Editor-Components here&lt;/wo:BSEditorForm&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRow">
+		<p class="synopsis">The plain BSEditorRow is for custom content. It can have a <code>label</code> which is totally optional.</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRow><p>This is an Editor row</p></wo:BSEditorRow>
+			<wo:BSEditorRow label="My Label"><p>This is an Editor row with a label!</p></wo:BSEditorRow>
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRow&gt;&lt;p&gt;This is an Editor row&lt;/p&gt;&lt;/wo:BSEditorRow&gt;
+&lt;wo:BSEditorRow label="My Label"&gt;&lt;p&gt;This is an Editor row with a label!&lt;/p&gt;&lt;/wo:BSEditorRow&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRowBrowser">
+		<p class="synopsis">You know BSBrowser from the Component Example? Well here is the Editor Row version of it!</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRowBrowser list="$exampleList" selections="$exampleSelections" multiple="$true" />
+			<wo:BSEditorRowBrowser list="$exampleList" selections="$exampleSelections" label="Available Options" multiple="$true" />
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowBrowser list="$exampleList" selections="$exampleSelections" label="Available Options" multiple="$true" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+
+	<wo:BSEditorPart title="BSEditorRowCheckbox">
+		<p class="synopsis">The well known BSCheckBox as a BSEditorRow.</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRowCheckBox label="Online" checked="$exampleSwitch" />
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowCheckBox label="Online" checked="$exampleSwitch" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRowColorPicker">
+		<p class="synopsis">Always wanted an easy way to select a color? Don't look further here is your solution!<br />You can also give the User a hint with the <code>helpText</code> binding!</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRowColorPicker label="Background Color" value="$exampleDict.color" helpText="Format: #RRGGBB" />
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowColorPicker label="Background Color" value="$exampleDict.color" helpText="Format: #RRGGBB" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRowPopUpButton">
+		<p class="synopsis">We've support for simple PopUpButtons as well! You can also add some custom content which gets displayed after the PopUpButton.</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRowPopUpButton label="List 1" list="$exampleList" selection="$exampleDict.selection" noSelectionString="- Select an Entry -" />
+			<wo:BSEditorRowPopUpButton label="List 2" list="$exampleList" selection="$exampleDict.selection" noSelectionString="- Select an Entry -">m/s^2</wo:BSEditorRowPopUpButton>
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowPopUpButton label="List 1" list="$exampleList" selection="$exampleDict.selection" noSelectionString="- Select an Entry -" /&gt;
+&lt;wo:BSEditorRowPopUpButton label="List 2" list="$exampleList" selection="$exampleDict.selection" noSelectionString="- Select an Entry -"&gt;m/s^2&lt;/wo:BSEditorRowPopUpButton&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRowSelectMultiple">
+		<p class="synopsis">Shortcut for BSBrowser, <code>multiple</code> is forced to <i>true</i> in this Component.</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRowSelectMultiple label="Many Items" list="$exampleList" selections="$exampleSelections" />
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowSelectMultiple label="Many Items" list="$exampleList" selections="$exampleSelections" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRowStreetAndNo" subtitle="and BSEditorRowZIPCityDistrict">
+		<p class="synopsis">
+			All those manual input fields for an address. Don't panic any more, we've only 2 components which'll do the work for you!<br />
+			<i>BTW: Placeholder support is on board!</i>
+		</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRowStreetAndNo label="Address" 
+									   street="$exampleDict.street" 
+									   streetPlaceholder="Main Street" 
+									   houseNo="$exampleDict.houseNo" 
+									   houseNoPlaceholder="42" />
+			<wo:BSEditorRowZIPCityDistrict label="City" 
+										   city="$exampleDict.city"
+										   cityPlaceholder="Durham" 
+										   zip="$exampleDict.city" 
+										   zipPlaceholder="75226" 
+										   district="$exampleDict.district"
+										   districtPlaceholder="No 9" />
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowStreetAndNo label="Address" 
+			   street="$exampleDict.street" 
+			   streetPlaceholder="Main Street" 
+			   houseNo="$exampleDict.houseNo" 
+			   houseNoPlaceholder="42" /&gt;
+&lt;wo:BSEditorRowZIPCityDistrict label="City" 
+			       city="$exampleDict.city"
+			       cityPlaceholder="Durham" 
+			       zip="$exampleDict.city" 
+			       zipPlaceholder="75226" 
+			       district="$exampleDict.district"
+			       districtPlaceholder="No 9" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRowTextarea" subtitle="Medium, Large and XtraLarge">
+		<p class="synopsis">Textarea support in 4 sizes!</p>
+		<wo:BSEditorForm>
+			<wo:BSEditorRowTextarea label="Normal" value="$exampleDict.textarea" />
+			<wo:BSEditorRowTextareaMedium label="Medium" value="$exampleDict.textarea" />
+			<wo:BSEditorRowTextareaLarge label="Large" value="$exampleDict.textarea" />
+			<wo:BSEditorRowTextareaXtraLarge label="XtraLarge" value="$exampleDict.textarea" />
+		</wo:BSEditorForm>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowTextarea label="Normal" value="$exampleDict.textarea" /&gt;
+&lt;wo:BSEditorRowTextareaMedium label="Medium" value="$exampleDict.textarea" /&gt;
+&lt;wo:BSEditorRowTextareaLarge label="Large" value="$exampleDict.textarea" /&gt;
+&lt;wo:BSEditorRowTextareaXtraLarge label="XtraLarge" value="$exampleDict.textarea" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<wo:BSEditorPart title="BSEditorRowTextField">
+		<p class="synopsis">Last but not least: TextField in all it's glory!</p>
+		<wo:BSEditorRowTextField label="Some Text" value="$exampleDict.textfield" helpText="Just enter something here" required="$true" unit="text/s" />
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSEditorRowTextField label="Some Text" value="$exampleDict.textfield" helpText="Just enter something here" required="$true" unit="text/s" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+</wo:Wrapper>
