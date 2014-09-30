@@ -1,0 +1,1 @@
+Just adding WebServerResources folder to git.

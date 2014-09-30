@@ -1,0 +1,130 @@
+<wo:Wrapper title="Example Components">
+	
+	<a name="BSAlert" class="toc"></a>
+	<wo:BSEditorPart title="BSAlert">
+		<p class="synopsis">Displays an alert message to the user. Those messages can be dismissed if the appropriate flag is set.</p>
+		<wo:BSAlert><b>BSAlert</b> Default</wo:BSAlert>
+		<wo:BSAlert type="danger"><b>BSAlert</b> Danger</wo:BSAlert>
+		<p><i>Supports all <a href="http://getbootstrap.com/components/#alerts" target="_blank">Bootstrap3 Alert types</a></i></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSAlert&gt;&lt;b&gt;BSAlert&lt;/b&gt; Default&lt;/wo:BSAlert&gt;
+&lt;wo:BSAlert type="danger"&gt;&lt;b&gt;BSAlert&lt;/b&gt; Danger&lt;/wo:BSAlert&gt;</wo:BSCodeSnippet>
+		<p>Alerts are dismissable, too</p>
+		<wo:BSAlert type="success" dismissable="$true"><b>BSAlert</b> Success. You can close me!</wo:BSAlert>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSAlert type="success" dismissable="$true"&gt;&lt;b&gt;BSAlert&lt;/b&gt; Success. You can close me!&lt;/wo:BSAlert&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSBadge" class="toc"></a>
+	<wo:BSEditorPart title="BSBadge">
+		<p class="synopsis">Add a nice touch to your numbers.</p>
+		<p><wo:BSBadge count="42" /> Items Inbox</p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSBadge count="42" /&gt; Items Inbox</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSBrowser" class="toc"></a>
+	<wo:BSEditorPart title="BSBrowser">
+		<p class="synopsis">You like those checkbox matrices? Then you'll love BSBrowser. Multiselect done right! Oh and you can search the list in realtime, too. Give it a try.</p>
+		<p><wo:BSBrowser list="$exampleList" selections="$exampleSelections" multiple="$true" /></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSBrowser list="$exampleList" selections="$exampleSelections" multiple="$true" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSCheckbox" class="toc"></a>
+	<wo:BSEditorPart title="BSCheckbox">
+		<p class="synopsis">Give your checkboxes a nice look with the help of <a href="http://abpetkov.github.io/switchery/" target="_blank">switchery</a>.</p>
+		<p><wo:BSCheckBox checked="$exampleSwitch" /></p>
+		<p><wo:BSCheckBox checked="$exampleSwitch" label="I can has a name too!" /></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSCheckBox checked="$exampleSwitch" /&gt;
+&lt;wo:BSCheckBox checked="$exampleSwitch" label="I can has a name too!" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSConfirmPanel" class="toc"></a>
+	<wo:BSEditorPart title="BSConfirmPanel">
+		<p class="synopsis">Ask for User's confirmation with style! Or just with a text link. Depends on your style. Really.</p>
+		<p><wo:BSConfirmPanel action="$exampleAction" confirmMessage="Do you really want to click me? Oh wait...">Click Me</wo:BSConfirmPanel></p>
+		<p><wo:BSConfirmPanel action="$exampleAction" displayAsLink="$true" confirmMessage="Do you really want to click me? Oh wait...">Click Me, too</wo:BSConfirmPanel></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSConfirmPanel action="$exampleAction" confirmMessage="Do you really want to click me? Oh wait..."&gt;Click Me&lt;/wo:BSConfirmPanel&gt;
+&lt;wo:BSConfirmPanel action="$exampleAction" displayAsLink="$true" confirmMessage="Do you really want to click me? Oh wait..."&gt;Click Me, too&lt;/wo:BSConfirmPanel&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSFileUpload" class="toc"></a>
+	<wo:BSEditorPart title="BSFileUpload">
+		<p class="synopsis">Get rid of those old-school system buttons and get some stylish input.</p>
+		<p><wo:BSFileUpload data="$exampleDict.data" buttonValue="Upload a Photo..." /></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSFileUpload data="$exampleDict.data" buttonValue="Upload a Photo..." /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSFooter" class="toc"></a>
+	<wo:BSEditorPart title="BSFooter">
+		<p class="synopsis">Give your site a nice footer without much hassle.<br /><i>BTW: You can see the footer at the bottom of this page</i></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSFooter&gt;Site's footer and a link &lt;a href="http://www.appwonder.net" target="_blank"&gt;Visit Me&lt;/a&gt;&lt;/wo:BSFooter&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSLabel" class="toc"></a>
+	<wo:BSEditorPart title="BSLabel">
+		<p class="synopsis">Give your text some style as a Label. Supports <a href="http://getbootstrap.com/components/#labels" target="_blank">Bootstrap3 types</a> as well</p>
+		<p><wo:BSLabel>Hello World</wo:BSLabel></p>
+		<p><wo:BSLabel type="danger">o_O something went wrong</wo:BSLabel></p>
+		<p><wo:BSLabel type="success">Don't Panic</wo:BSLabel></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSLabel&gt;Hello World&lt;/wo:BSLabel&gt;
+&lt;wo:BSLabel type="danger"&gt;o_O something went wrong&lt;/wo:BSLabel&gt;
+&lt;wo:BSLabel type="success"&gt;Don't Panic&lt;/wo:BSLabel&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSNavigationBar" class="toc"></a>
+	<wo:BSEditorPart title="BSNavigationBar">
+		<p class="synopsis">Add a nice responsive navigation bar to your site.<br /><i>BTW: The navigation bar at the top of this page is a BSNavigationBar!</i></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSNavigationBar title="DDBootstrap3 Demo" defaultItem="$defaultItem" list="$navigationItems" item="$currentNavigationItem" selection="$selectedNavigationItem" delegate="$navigationBarDelegate" /&gt;</wo:BSCodeSnippet>
+		<p>For implementation details check out this Application's source: <a href="https://github.com/AppWonder/DDBootstrap3Demo/blob/master/DDBootstrap3Demo/Components/NavigationBar.wo/NavigationBar.html" target="_blank">HTML</a> | <a href="https://github.com/AppWonder/DDBootstrap3Demo/blob/master/DDBootstrap3Demo/Sources/com/dd/bootstrap3/demo/components/NavigationBar.java" target="_blank">Java</a></p>
+	</wo:BSEditorPart>
+	
+	<a name="BSPopUpButton" class="toc"></a>
+	<wo:BSEditorPart title="BSPopUpButton">
+		<p class="synopsis">Userfriendly PopUpButtons with realtime search function inside!</p>
+		<p><wo:BSPopUpButton list="$exampleList" selection="$exampleDict.selection" noSelectionString="- Please Select Something -" /></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSPopUpButton list="$exampleList" selection="$exampleDict.selection" noSelectionString="- Please Select Something -" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSSocialButton" class="toc"></a>
+	<wo:BSEditorPart title="BSSocialButton">
+		<p class="synopsis">Looking for all kinds of icons for social plattforms? Here you go.</p>
+		<p><wo:BSSocialButton type="twitter" action="$exampleAction">Twitter is Awesome!</wo:BSSocialButton></p>
+		<p><wo:BSSocialButton type="facebook" action="$exampleAction">Login with your Facebook account</wo:BSSocialButton></p>
+		<p>To small? Well you can go bigger, if you want to. Just add the <code>fullWidth</code> flag!</p>
+		<p><wo:BSSocialButton type="twitter" action="$exampleAction" fullWidth="$true">Twitter is still Awesome!</wo:BSSocialButton></p>
+		<p>Want it tiny and small? No problem with BSSocialButton. Add <code>asIcon</code> flag and you're set to go!</p>
+		<wo:BSSocialButton type="bitbucket" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="dropbox" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="facebook" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="flickr" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="foursquare" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="github" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="google-plus" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="instagram" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="linkedin" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="reddit" action="$exampleAction" asIcon="$true" />
+		<wo:BSSocialButton type="twitter" action="$exampleAction" asIcon="$true" />
+		<p>
+			Supported types are:
+			apn, bitbucket, dropbox, facebook, flickr, foursquare, github, google-plus, instagram, linkedin, 
+			microsoft, openid, reddit, soundcloud, tumblr, twitter, vimeo, vk, yahoo
+		</p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSSocialButton type="twitter" action="$exampleAction"&gt;Twitter is Awesome!&lt;/wo:BSSocialButton&gt;
+&lt;wo:BSSocialButton type="twitter" action="$exampleAction" fullWidth="$true"&gt;Twitter is still Awesome!&lt;/wo:BSSocialButton&gt;
+&lt;wo:BSSocialButton type="twitter" action="$exampleAction" asIcon="$true" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSSubmitButton" class="toc"></a>
+	<wo:BSEditorPart title="BSSubmitButton">
+		<p class="synopsis">Get a ready to use pre-styled submit button!</p>
+		<p><wo:BSSubmitButton action="$exampleAction">Submit Me</wo:BSSubmitButton></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSSubmitButton action="$exampleAction"&gt;Submit Me&lt;/wo:BSSubmitButton&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	<a name="BSTextField" class="toc"></a>
+	<wo:BSEditorPart title="BSTextField">
+		<p class="synopsis">A textfield input the Bootstrap way!</p>
+		<p><wo:BSTextField value="$exampleDict.textValue" /></p>
+		<wo:BSCodeSnippet showLineNumbers="$true">&lt;wo:BSTextField value="$exampleDict.textValue" /&gt;</wo:BSCodeSnippet>
+	</wo:BSEditorPart>
+	
+	
+</wo:Wrapper>
